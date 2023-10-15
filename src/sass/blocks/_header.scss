@@ -1,0 +1,31 @@
+.header {
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .logo {
+    }
+    &__menu-list {
+        list-style-type: none;
+        display: flex;
+    }
+    &__menu-item {
+        a{
+            color: #fff;
+            text-decoration: none;
+        }
+        margin-left: 80px;
+        &:first-child{
+            margin-left: 0;
+        }
+        
+    }
+    &__social-item{
+        text-decoration: none;
+        margin-left: 15px;
+        &:first-child{
+            margin-left: 0;
+        }
+    }
+}
