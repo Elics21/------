@@ -2,6 +2,7 @@
 
 body{
     background-color: #00454F;
+    margin: 0;
 }
 
 .container{
@@ -10,3 +11,4 @@ body{
 }
 
 @import 'blocks/header';
+@import 'blocks/main';
