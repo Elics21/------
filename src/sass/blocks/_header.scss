@@ -1,16 +1,19 @@
 .header {
-    &__wrapper {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-    .logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &__logo {
     }
     &__menu-list {
         list-style-type: none;
         display: flex;
     }
     &__menu-item {
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 30px;
+        font-family: 'Strong';
         a{
             color: #fff;
             text-decoration: none;
