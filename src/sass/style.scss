@@ -3,11 +3,17 @@
 body{
     background-color: #00454F;
     margin: 0;
+    font-family: 'Strong';
 }
 
 .container{
     width: 1172px;
     margin: 0 auto;
+}
+.left-line{
+    height: 57px;
+    border-left: 3px solid #FFFFFF;
+    margin-right: 17px;
 }
 
 @import 'blocks/header';

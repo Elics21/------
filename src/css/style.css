@@ -7,6 +7,7 @@
 body {
   background-color: #00454F;
   margin: 0;
+  font-family: "Strong";
 }
 
 .container {
@@ -14,10 +15,17 @@ body {
   margin: 0 auto;
 }
 
+.left-line {
+  height: 57px;
+  border-left: 3px solid #FFFFFF;
+  margin-right: 17px;
+}
+
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 280px;
 }
 .header__menu-list {
   list-style-type: none;
@@ -47,6 +55,62 @@ body {
 }
 
 .main {
+  position: relative;
   height: 1034px;
-  background: url("../img/bg/фон.jpg") 0 0/cover no-repeat;
+  background: url("../img/робот.png") 760px 300px/940px 560px no-repeat, url("../img/bg/фон.jpg") 0 0/cover no-repeat;
+}
+.main__robot-img {
+  position: absolute;
+  width: 940px;
+  height: 550px;
+  top: 80px;
+  right: 80px;
+}
+.main__title {
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  color: #00B292;
+  margin-bottom: 38px;
+}
+.main__big-text {
+  color: #FFF;
+  font-size: 75px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+}
+.main__description {
+  display: flex;
+  width: 468px;
+  color: #C7E1E1;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px; /* 136.364% */
+  letter-spacing: 1.1px;
+  text-transform: lowercase;
+  margin-bottom: 64px;
+}
+.main__buttons {
+  display: flex;
+}
+.main__button {
+  cursor: pointer;
+  border: none;
+  border-radius: 20px 8px;
+  height: 56px;
+}
+.main__button a {
+  text-decoration: none;
+  color: white;
+}
+.main .join {
+  width: 208px;
+  background-color: rgba(5, 218, 201, 0.41);
+}
+.main .more-detailed {
+  width: 103px;
+  background: none;
 }
