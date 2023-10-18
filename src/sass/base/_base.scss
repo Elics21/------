@@ -1,0 +1,21 @@
+.recolor-text{
+    color: #00d6af;
+}
+
+.fs26{
+    font-size: 26px;
+}
+
+.tt-upper{
+    text-transform: uppercase;
+}
+
+.title-cover{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 1000px;
+    height: 110px;
+    background:url('../img/заголовок.png') center center no-repeat;
+}

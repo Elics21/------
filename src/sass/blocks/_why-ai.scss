@@ -1,0 +1,29 @@
+.Why-Ai{
+    height: 787px;
+    &__title{
+        color: #fff;
+        text-align: center;
+        font-family: Strong;
+        font-size: 50px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+    &__text{
+        margin-top: 111px   ;
+        color: #fff;
+        width: 713px;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 30px; /* 115.385% */
+    }
+    &__wrapper{
+        position: relative;
+    }
+    &__img{
+        position: absolute;
+        top: -30px;
+        left: 470px;
+    }
+}

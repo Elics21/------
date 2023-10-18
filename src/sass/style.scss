@@ -1,7 +1,7 @@
 @import 'fonts/strong';
 
 body{
-    background-color: #00454F;
+    background-color: #0B1D24;
     margin: 0;
     font-family: 'Strong';
 }
@@ -16,9 +16,11 @@ body{
     margin-right: 17px;
 }
 //Base
+@import 'base/base';
 @import "base/buttons";
 
 //Blocks
 @import 'blocks/header';
 @import 'blocks/main';
 @import 'blocks/about-technologyю';
+@import 'blocks/why-ai';

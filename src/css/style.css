@@ -5,7 +5,7 @@
   src: url("../fonts/strong.eot?#iefix") format("embedded-opentype"), url("../fonts/strong.woff2") format("woff2"), url("../fonts/strong.woff") format("woff"), url("../fonts/strong.ttf") format("truetype"), url("../fonts/strong.svg#strong") format("svg"); /* Chrome < 4, Legacy iOS */
 }
 body {
-  background-color: #00454F;
+  background-color: #0B1D24;
   margin: 0;
   font-family: "Strong";
 }
@@ -19,6 +19,28 @@ body {
   height: 57px;
   border-left: 3px solid #FFFFFF;
   margin-right: 17px;
+}
+
+.recolor-text {
+  color: #00d6af;
+}
+
+.fs26 {
+  font-size: 26px;
+}
+
+.tt-upper {
+  text-transform: uppercase;
+}
+
+.title-cover {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  width: 1000px;
+  height: 110px;
+  background: url("../img/заголовок.png") center center no-repeat;
 }
 
 .buttons {
@@ -82,16 +104,17 @@ body {
 }
 
 .main {
-  position: relative;
   height: 1034px;
-  background: url("../img/робот.png") 760px 300px/940px 560px no-repeat, url("../img/bg/фон.jpg") 0 0/cover no-repeat;
+  background: url("../img/bg/фон.jpg") 0 0/cover no-repeat;
+}
+.main__wrapper {
+  position: relative;
 }
 .main__robot-img {
   position: absolute;
-  width: 940px;
-  height: 550px;
-  top: 80px;
-  right: 80px;
+  top: 300px;
+  right: -170px;
+  width: 1000px;
 }
 .main__title {
   font-size: 40px;
@@ -123,8 +146,8 @@ body {
 
 .about-technology {
   background: #0B1D24;
-  height: 676px;
-  padding: 103px 0 61px 0;
+  height: 670px;
+  padding: 75px 0;
 }
 .about-technology__title {
   color: #FFF;
@@ -135,9 +158,6 @@ body {
   text-transform: lowercase;
   margin-bottom: 39px;
 }
-.about-technology__title .recolor-text {
-  color: #00B292;
-}
 .about-technology__text {
   color: #FFF;
   font-family: Strong;
@@ -146,6 +166,33 @@ body {
   font-weight: 400;
   line-height: 30px;
 }
-.about-technology__text .recolor-text {
-  color: #00c7a2;
+
+.Why-Ai {
+  height: 787px;
+}
+.Why-Ai__title {
+  color: #fff;
+  text-align: center;
+  font-family: Strong;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.Why-Ai__text {
+  margin-top: 111px;
+  color: #fff;
+  width: 713px;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px; /* 115.385% */
+}
+.Why-Ai__wrapper {
+  position: relative;
+}
+.Why-Ai__img {
+  position: absolute;
+  top: -30px;
+  left: 470px;
 }
