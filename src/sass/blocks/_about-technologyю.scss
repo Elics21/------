@@ -1,0 +1,29 @@
+.about-technology{
+    background: #0B1D24;
+    height: 676px;
+    padding:  103px 0 61px 0;
+    &__title{
+        color: #FFF;
+        font-size: 80px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        text-transform: lowercase;
+        margin-bottom: 39px;
+        .recolor-text{
+            color: #00B292;
+        }
+
+    }
+    &__text{
+        color: #FFF;
+        font-family: Strong;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 30px;
+        .recolor-text{
+            color: #00c7a2;
+        }
+    }
+}
