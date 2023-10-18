@@ -10,7 +10,7 @@ gulp.task('sass', function() {
         .pipe(browserSync.stream());
 });
 
-gulp.task('start', function(){
+gulp.task('server', function(){
     browserSync({
         server: {
             baseDir: 'src'
@@ -22,6 +22,4 @@ gulp.task('start', function(){
     gulp.watch("src/js/**/*.js").on('change', browserSync.reload);
 });
 
-gulp.task('build', function(){
-
-})
+gulp.task('default', gulp.parallel('server', 'sass'));
