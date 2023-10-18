@@ -1,0 +1,21 @@
+.buttons{
+    display: flex;
+}
+.button{
+    cursor: pointer;
+    border: none;
+    border-radius: 20px 8px;
+    height: 56px;
+    a{
+        text-decoration: none;
+        color: white;
+    }
+}
+.join{
+    width: 208px;
+    background-color: rgba(5, 218, 201, 0.41);
+}
+.more-detailed{
+    width: 103px;
+    background: none;
+}

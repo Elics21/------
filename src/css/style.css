@@ -21,6 +21,31 @@ body {
   margin-right: 17px;
 }
 
+.buttons {
+  display: flex;
+}
+
+.button {
+  cursor: pointer;
+  border: none;
+  border-radius: 20px 8px;
+  height: 56px;
+}
+.button a {
+  text-decoration: none;
+  color: white;
+}
+
+.join {
+  width: 208px;
+  background-color: rgba(5, 218, 201, 0.41);
+}
+
+.more-detailed {
+  width: 103px;
+  background: none;
+}
+
 .header {
   display: flex;
   justify-content: space-between;
@@ -92,25 +117,4 @@ body {
   letter-spacing: 1.1px;
   text-transform: lowercase;
   margin-bottom: 64px;
-}
-.main__buttons {
-  display: flex;
-}
-.main__button {
-  cursor: pointer;
-  border: none;
-  border-radius: 20px 8px;
-  height: 56px;
-}
-.main__button a {
-  text-decoration: none;
-  color: white;
-}
-.main .join {
-  width: 208px;
-  background-color: rgba(5, 218, 201, 0.41);
-}
-.main .more-detailed {
-  width: 103px;
-  background: none;
 }
