@@ -33,14 +33,24 @@ body {
   text-transform: uppercase;
 }
 
-.title-cover {
+.cover-1 {
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 0 auto;
   width: 1000px;
   height: 110px;
-  background: url("../img/заголовок.png") center center no-repeat;
+  background: url("../img/cover-1.png") center center no-repeat;
+}
+
+.cover-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  width: 1000px;
+  height: 110px;
+  background: url("../img/cover-2.png") center center no-repeat;
 }
 
 .buttons {
@@ -167,10 +177,10 @@ body {
   line-height: 30px;
 }
 
-.Why-Ai {
-  height: 787px;
+.why-ai {
+  height: 750px;
 }
-.Why-Ai__title {
+.why-ai__title {
   color: #fff;
   text-align: center;
   font-family: Strong;
@@ -179,7 +189,7 @@ body {
   font-weight: 400;
   line-height: normal;
 }
-.Why-Ai__text {
+.why-ai__text {
   margin-top: 111px;
   color: #fff;
   width: 713px;
@@ -188,11 +198,44 @@ body {
   font-weight: 400;
   line-height: 30px; /* 115.385% */
 }
-.Why-Ai__wrapper {
+.why-ai__wrapper {
   position: relative;
 }
-.Why-Ai__img {
+.why-ai__img {
   position: absolute;
   top: -30px;
   left: 470px;
+}
+
+.nobody {
+  background: linear-gradient(92deg, rgba(0, 178, 146, 0) 1.61%, rgba(0, 122, 100, 0.6) 28.98%, #69ECEC 50.22%, rgba(9, 19, 23, 0) 95.85%) 0 27px/100% 4px no-repeat, linear-gradient(92deg, rgba(0, 178, 146, 0) 1.61%, rgba(0, 122, 100, 0.6) 28.98%, #69ECEC 50.22%, rgba(9, 19, 23, 0) 95.85%) 0 570px/100% 4px no-repeat;
+  height: 600px;
+  padding: 90px 0;
+}
+.nobody__title {
+  text-align: center;
+  color: #FFF;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 70px;
+}
+.nobody__text {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  color: #FFF;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  margin-bottom: 75px;
+}
+.nobody__date {
+  color: #FFF;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
 }

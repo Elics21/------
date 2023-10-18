@@ -1,0 +1,36 @@
+.nobody{
+    background: 
+    linear-gradient(92deg, rgba(0, 178, 146, 0.00) 1.61%, rgba(0, 122, 100, 0.60) 28.98%, #69ECEC 50.22%, rgba(9, 19, 23, 0.00) 95.85%)
+    0 27px/ 100% 4px no-repeat, 
+    linear-gradient(92deg, rgba(0, 178, 146, 0.00) 1.61%, rgba(0, 122, 100, 0.60) 28.98%, #69ECEC 50.22%, rgba(9, 19, 23, 0.00) 95.85%)
+    0 570px/ 100% 4px no-repeat;
+    height: 600px;
+    padding: 90px 0;
+    &__title{
+        text-align: center;
+        color: #FFF;
+        font-size: 50px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        margin-bottom: 70px;
+    }
+    &__text{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        color: #FFF;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 30px;
+        margin-bottom: 75px;
+    }
+    &__date{
+        color: #FFF;
+        font-size: 25px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 30px;
+    }
+}
