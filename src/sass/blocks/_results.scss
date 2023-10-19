@@ -1,5 +1,9 @@
 .results{
-    height: 1213px;
+    min-height: 1213px;
+    .full-table{
+        height: 100%;
+        overflow-y: hidden;
+    }
     &__table{
         margin: 0 auto;
         height: 305px;
