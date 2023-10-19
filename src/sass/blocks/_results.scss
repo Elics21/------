@@ -1,0 +1,61 @@
+.results{
+    height: 1213px;
+    &__table{
+        margin: 0 auto;
+        height: 305px;
+        margin-bottom: 37px;
+        overflow-y: scroll;
+        &::-webkit-scrollbar{
+            width: 6px;
+        }
+        &::-webkit-scrollbar-track{
+            background: rgba(217, 217, 217, 0.28);
+            border-radius: 10px;
+        }
+        &::-webkit-scrollbar-thumb {
+            background: radial-gradient(65.2% 65.96% at 60% 34.8%, #00AD8E 0.93%, #007A64 100%);
+            box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+            border-radius: 10px;
+        }
+        img{
+            width: 99.2%;
+        }
+    }
+    
+    &__title{
+        color: #FFF;
+        font-family: Strong;
+        font-size: 50px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        margin-bottom: 29px;
+    }
+    &__sub-title{
+        color: #FFF;
+        font-family: Strong;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 30px;
+        margin-bottom: 67px;
+    }
+    &__wrapper{
+        position: relative;
+        padding-top: 67px;
+    }
+    &__robot{
+        position: absolute;
+        top: 0;
+        right: -170px;
+        z-index: -1;
+    }
+    &__button{
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 58px;
+    }
+    &__graph{
+        text-align: center;
+    }
+}

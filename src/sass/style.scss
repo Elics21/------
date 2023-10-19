@@ -7,7 +7,7 @@ body{
 }
 
 .container{
-    width: 1172px;
+    width: 1170px;
     margin: 0 auto;
 }
 .left-line{
@@ -24,4 +24,5 @@ body{
 @import 'blocks/main';
 @import 'blocks/about-technologyю';
 @import 'blocks/why-ai';
-@import 'blocks/nobody'
+@import 'blocks/nobody';
+@import 'blocks/results';
