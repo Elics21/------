@@ -1,6 +1,7 @@
 const gulp = require('gulp');
 const sass = require('gulp-sass')(require('sass'));
 const browserSync = require('browser-sync');
+const hello = 'hello';
 
 
 gulp.task('sass', function() {
