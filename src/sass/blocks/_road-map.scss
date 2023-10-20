@@ -1,16 +1,21 @@
 .road-map{
+    padding: 30px;
+    &__sity{
+        
+    }
     &__years-wrapper{
         display: flex;
         justify-content: space-between;
     }
     &__item{
         border: 1px solid #FFF;
-        width: 155px;
+        width: 15%;
         text-align: center;
         
     }
     &__crystal{
-            margin-bottom: 35px;
+        cursor: pointer;
+        margin-bottom: 35px;
     }
     &__year{
         color: #FFF;
@@ -30,14 +35,14 @@
         font-style: normal;
         font-weight: 400;
         line-height: 20px; /* 100% */
-        text-transform: lowercase;
         margin-bottom: 23px;
     }
     &__open{
+        cursor: pointer;
         background-image: linear-gradient(91deg, rgba(5, 218, 201, 0.41) -3.66%, rgba(0, 143, 163, 0.20) 49.48%, rgba(0, 174, 164, 0.38) 100.28%);
         background-color: rgba(2, 130, 133, 0.25);
         border: 2px solid #00D6DA;
-        border-radius: 5px;
+        border-radius: 12px 8px;
         width: 110px;
         height: 30px;
         img{
