@@ -1,5 +1,8 @@
 .plan{
     padding: 50px 0;
+    &__wrapper{
+        background: url('../img/bg/мозг фон.png') center center no-repeat;
+    }
     &__title{
         color: #FFF;
         font-family: Strong;

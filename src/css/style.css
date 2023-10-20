@@ -439,6 +439,9 @@ body {
 .plan {
   padding: 50px 0;
 }
+.plan__wrapper {
+  background: url("../img/bg/мозг фон.png") center center no-repeat;
+}
 .plan__title {
   color: #FFF;
   font-family: Strong;
