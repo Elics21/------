@@ -270,7 +270,7 @@ body {
   border-radius: 10px;
 }
 .results__table img {
-  width: 99.2%;
+  width: 98%;
 }
 .results__title {
   color: #FFF;
@@ -459,4 +459,49 @@ body {
   font-style: normal;
   font-weight: 400;
   line-height: 30px;
+}
+
+.road-map__years-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.road-map__item {
+  border: 1px solid #FFF;
+  width: 155px;
+  text-align: center;
+}
+.road-map__crystal {
+  margin-bottom: 35px;
+}
+.road-map__year {
+  color: #FFF;
+  text-align: center;
+  font-family: Strong;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+  margin-bottom: 18px;
+}
+.road-map__descr {
+  text-align: center;
+  font-family: Strong;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px; /* 100% */
+  text-transform: lowercase;
+  margin-bottom: 23px;
+}
+.road-map__open {
+  background-image: linear-gradient(91deg, rgba(5, 218, 201, 0.41) -3.66%, rgba(0, 143, 163, 0.2) 49.48%, rgba(0, 174, 164, 0.38) 100.28%);
+  background-color: rgba(2, 130, 133, 0.25);
+  border: 2px solid #00D6DA;
+  border-radius: 5px;
+  width: 110px;
+  height: 30px;
+}
+.road-map__open img {
+  margin-top: 2px;
 }
