@@ -1,8 +1,8 @@
 const slider = document.querySelector('.about-us__slider');
 const sliderItems = document.querySelectorAll('.about-us__slider-item');
 let sliderActiveItem = document.querySelector('.active-slide');
-const buttonNext = document.querySelector('#next');
-const buttonPrev = document.querySelector('#prev'); 
+const buttonNext = document.querySelector('#next-slide');
+const buttonPrev = document.querySelector('#prev-slide'); 
 
 function findIndexByClassName(className) {
     return Array.from(sliderItems).findIndex(item => item.classList.contains(className));

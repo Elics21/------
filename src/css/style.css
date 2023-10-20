@@ -464,6 +464,50 @@ body {
 .road-map {
   padding: 30px;
 }
+.road-map #close {
+  background: none;
+  border: none;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+.road-map .test {
+  position: relative;
+  margin: 1000px 0;
+  padding-left: 18px;
+  padding-top: 53px;
+  width: 261px;
+  height: 271px;
+  background: linear-gradient(91deg, rgba(0, 192, 177, 0.12) -3.66%, rgba(0, 143, 163, 0.02) 49.48%, rgba(0, 163, 153, 0.1) 100.28%);
+  border-radius: 28px 8px;
+  border: 8px solid rgba(8, 18, 23, 0.7);
+  box-shadow: 0px 0px 0px 2px rgb(82, 255, 245);
+}
+.road-map .test .year {
+  color: #FFF;
+  font-family: Strong;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+}
+.road-map .test .recol-text {
+  color: #00d6af;
+  font-family: Strong;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 25px; /* 125% */
+}
+.road-map .test .text {
+  color: #FFF;
+  font-family: Strong;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px; /* 111.111% */
+}
 .road-map__years-wrapper {
   display: flex;
   justify-content: space-between;
