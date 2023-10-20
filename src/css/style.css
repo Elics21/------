@@ -435,3 +435,25 @@ body {
 .about-us__buttons button:last-child {
   margin-left: 20px;
 }
+
+.plan {
+  padding: 50px 0;
+}
+.plan__title {
+  color: #FFF;
+  font-family: Strong;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+  margin-bottom: 50px;
+}
+.plan__text {
+  color: #FFF;
+  font-family: Strong;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+}

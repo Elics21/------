@@ -1,0 +1,21 @@
+.plan{
+    padding: 50px 0;
+    &__title{
+        color: #FFF;
+        font-family: Strong;
+        font-size: 50px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        text-transform: uppercase;
+        margin-bottom: 50px;
+    }
+    &__text{
+        color: #FFF;
+        font-family: Strong;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 30px;
+    }
+}
