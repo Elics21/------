@@ -41,37 +41,14 @@ const arrModalItemsAll = [
 itemAll.forEach((item)=>{
     item.addEventListener('click', (event)=>{
         const {target} = event;
-        if(target.id === 'open' || target.id === 'open-img'){
-            let modalItem;
-            let dataYear;
-            const currentModal = document.querySelector('.modal');
-
-            //Получаем дата атрибут года
-            if(target.id === 'open-img'){
-                dataYear = target.parentNode.getAttribute('data-year');
-            }
-            else{
-                dataYear = target.getAttribute('data-year');
-            }
-
-            //Если элемента нет на странице, то выводим его
-            if(!currentModal){
-                addModalItem(modalItem, dataYear);
-            }
-            //если элемент есть, то удаляем его
-            else{
-                if(currentModal.classList.contains(`year-${dataYear}`)){
-                    currentModal.remove();
-                }
-                else{
-                    currentModal.remove();
-                    addModalItem(modalItem, dataYear);
-                }
-            }
+        const isOpenBtn = target.getAttribute('data-year');
+        if(isOpenBtn){
+            checkAndAddModal(target);
         }
-        
     });
 });
+
+
 
 function addModalItem(modalItem, dataYear){
     for(let i=0; i < arrModalItemsAll.length; i++){
@@ -80,6 +57,30 @@ function addModalItem(modalItem, dataYear){
         }
     }
     sityDiv.append(modalItem);
+}
+
+function checkAndAddModal(target){
+    const currentModal = document.querySelector('.modal');
+    let modalItem;
+    let dataYear;
+ 
+    //Получаем дата атрибут года
+    dataYear = target.getAttribute('data-year');
+
+    //Если элемента нет на странице, то выводим его
+    if(!currentModal){
+        addModalItem(modalItem, dataYear);
+    }
+    //если элемент есть, то удаляем его
+    else{
+        if(currentModal.classList.contains(`year-${dataYear}`)){
+            currentModal.remove();
+        }
+        else{
+            currentModal.remove();
+            addModalItem(modalItem, dataYear);
+        }
+    }
 }
 
 function getModalItem (year, index){
