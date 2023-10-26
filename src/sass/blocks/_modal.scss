@@ -1,17 +1,67 @@
+.year-2019{
+    left: 100px;
+}
+.year-2020{
+    left: 0;
+}
+.year-2021{
+    left: 0;
+}
+.year-2022{
+    left: 0;
+}
+.year-2023{
+    left: 0;
+}
+.year-2024{
+    left: 0;
+}
 .modal{
-    .dp-n{
-        display: none;
-    }
-    position: relative;
-    margin: 1000px 0;
+    position: absolute;
+    top: 0;
+    width: 261px;
+    height: 290px;
     padding-left: 18px;
     padding-top: 53px;
-    width: 261px;
-    height: 271px;
-    background: linear-gradient(91deg, rgba(0, 192, 177, 0.12) -3.66%, rgba(0, 143, 163, 0.02) 49.48%, rgba(0, 163, 153, 0.1) 100.28%);
+    background: linear-gradient(91deg, rgba(0, 192, 177, 0.4) -3.66%, rgba(0, 143, 163, 0.4) 49.48%, rgba(0, 163, 153, 0.4) 100.28%);
     border-radius: 28px 8px;
     border: 8px solid rgba(8, 18, 23, 0.7);
     box-shadow: 0px 0px 0px 2px rgb(82, 255, 245);
+    
+    &__wrapper{
+        position: relative;
+        width: 100%;
+        height: 100%;
+    }
+    .dp-n{
+        display: none;
+    }
+    
+    &__btn{
+        position: absolute;
+        bottom: 0px;
+        border: none;
+        color: rgba(195, 195, 195, 0.7);;
+        background: none;
+        font-size: 55px;
+        &:hover{
+            color: #54FFE0;
+        }
+        
+    }
+    #prev-year{
+        left: 10px;
+    }
+    #next-year{
+        right: 10px;
+    }
+    #close{
+        background: none;
+        border: none;
+        position: absolute;
+        top: -35px;
+        right: 10px;
+    }
     &__year{
         color: #FFF;
         font-family: Strong;

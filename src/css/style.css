@@ -461,20 +461,73 @@ body {
   line-height: 30px;
 }
 
+.year-2019 {
+  left: 100px;
+}
+
+.year-2020 {
+  left: 0;
+}
+
+.year-2021 {
+  left: 0;
+}
+
+.year-2022 {
+  left: 0;
+}
+
+.year-2023 {
+  left: 0;
+}
+
+.year-2024 {
+  left: 0;
+}
+
 .modal {
-  position: relative;
-  margin: 1000px 0;
+  position: absolute;
+  top: 0;
+  width: 261px;
+  height: 290px;
   padding-left: 18px;
   padding-top: 53px;
-  width: 261px;
-  height: 271px;
-  background: linear-gradient(91deg, rgba(0, 192, 177, 0.12) -3.66%, rgba(0, 143, 163, 0.02) 49.48%, rgba(0, 163, 153, 0.1) 100.28%);
+  background: linear-gradient(91deg, rgba(0, 192, 177, 0.4) -3.66%, rgba(0, 143, 163, 0.4) 49.48%, rgba(0, 163, 153, 0.4) 100.28%);
   border-radius: 28px 8px;
   border: 8px solid rgba(8, 18, 23, 0.7);
   box-shadow: 0px 0px 0px 2px rgb(82, 255, 245);
 }
+.modal__wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
 .modal .dp-n {
   display: none;
+}
+.modal__btn {
+  position: absolute;
+  bottom: 0px;
+  border: none;
+  color: rgba(195, 195, 195, 0.7);
+  background: none;
+  font-size: 55px;
+}
+.modal__btn:hover {
+  color: #54FFE0;
+}
+.modal #prev-year {
+  left: 10px;
+}
+.modal #next-year {
+  right: 10px;
+}
+.modal #close {
+  background: none;
+  border: none;
+  position: absolute;
+  top: -35px;
+  right: 10px;
 }
 .modal__year {
   color: #FFF;
@@ -503,21 +556,17 @@ body {
 }
 
 .road-map {
-  padding: 30px;
+  padding: 100px;
 }
-.road-map #close {
-  background: none;
-  border: none;
-  position: absolute;
-  top: 10px;
-  right: 10px;
+.road-map__sity {
+  position: relative;
+  margin-bottom: 25px;
 }
 .road-map__years-wrapper {
   display: flex;
   justify-content: space-between;
 }
 .road-map__item {
-  border: 1px solid #FFF;
   width: 15%;
   text-align: center;
 }
