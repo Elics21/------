@@ -62,20 +62,20 @@ function addModalItem(modalItem, dataYear){
 function checkAndAddModal(target){
     const currentModal = document.querySelector('.modal');
     let modalItem;
-    let dataYear;
- 
-    //Получаем дата атрибут года
-    dataYear = target.getAttribute('data-year');
 
+    //Получаем дата атрибут года
+    const dataYear = target.getAttribute('data-year');
+    
     //Если элемента нет на странице, то выводим его
     if(!currentModal){
         addModalItem(modalItem, dataYear);
     }
-    //если элемент есть, то удаляем его
     else{
+        //если нажали повторно на элемент, то закрываем
         if(currentModal.classList.contains(`year-${dataYear}`)){
             currentModal.remove();
         }
+        //если нажали на другой элемент, то закрываем и выводим новый
         else{
             currentModal.remove();
             addModalItem(modalItem, dataYear);
@@ -84,11 +84,15 @@ function checkAndAddModal(target){
 }
 
 function getModalItem (year, index){
+    //получаем значения для блока из массива
     const title = arrModalItemsAll[index].title;
     const text = arrModalItemsAll[index].text;
+    //создаем элемент
     let item = document.createElement('div');
+    //задаем ему классы
     item.classList.add('modal');
     item.classList.add(`year-${year}`);
+    item.classList.add('b-show'); //для плавного появления блока на экране
     item.innerHTML =  `
     <div class="modal__wrapper">
         <button class="modal__close-btn" id="close"><img src="icons/Clear.png" alt=""></button>
