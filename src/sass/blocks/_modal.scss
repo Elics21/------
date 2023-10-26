@@ -22,6 +22,8 @@
     }
     
     &__btn{
+        cursor: pointer;
+        transition: 0.2s all;
         position: absolute;
         bottom: 0px;
         border: none;
@@ -40,11 +42,18 @@
         right: 10px;
     }
     #close{
+        cursor: pointer;
+        transition: 0.2s all;
         background: none;
         border: none;
         position: absolute;
         top: -35px;
         right: 10px;
+        font-size: 20px;
+        color: rgba(195, 195, 195, 0.7);
+        &:hover{
+            color: #54FFE0;
+        }
     }
     &__year{
         color: #FFF;

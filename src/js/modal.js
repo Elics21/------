@@ -95,7 +95,7 @@ function getModalItem (year, index){
     item.classList.add('b-show'); //для плавного появления блока на экране
     item.innerHTML =  `
     <div class="modal__wrapper">
-        <button class="modal__close-btn" id="close"><img src="icons/Clear.png" alt=""></button>
+        <button class="modal__close-btn" id="close">✖</button>
         <div class="modal__year">${year}</div>    
         <div class="modal__title">${title}</div>
         <div class="modal__text">${text}</div>
