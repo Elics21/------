@@ -35,36 +35,40 @@ const arrModalItemsAll = [
     },
 ]
 
-
-// console.log( btnOpenModal.getAttribute('data-year'));
-
 itemAll.forEach((item)=>{
     item.addEventListener('click', (event)=>{
         const {target} = event;
-        const isOpenBtn = target.getAttribute('data-year');
-        if(isOpenBtn){
-            checkAndAddModal(target);
+        const dataYear = target.getAttribute('data-year');
+        if(dataYear){
+            checkAndAddModal(dataYear);
         }
     });
 });
 
-
-
-function addModalItem(modalItem, dataYear){
-    for(let i=0; i < arrModalItemsAll.length; i++){
-        if(dataYear === arrModalItemsAll[i].year){
-            modalItem = getModalItem(dataYear, i);
-        }
-    }
-    sityDiv.append(modalItem);
-}
-
-function checkAndAddModal(target){
+sityDiv.addEventListener('click', (event)=>{
+    const btnCloseModal = event.target.closest('#close');
+    const btnNextModal = event.target.closest('#next-year');
+    const btnPrevModal = event.target.closest('#prev-year');
     const currentModal = document.querySelector('.modal');
-    let modalItem;
+    let data = currentModal.getAttribute('data-year');
+    if(btnCloseModal){
+        currentModal.remove();
+    }
+    else if(btnNextModal){
+        data = Number(data) + 1;
+        data = String(data);
+        checkAndAddModal(data);
+    }
+    else if(btnPrevModal){
+        data = Number(data) - 1;
+        data = String(data);
+        checkAndAddModal(data);
+    }
+})
 
-    //Получаем дата атрибут года
-    const dataYear = target.getAttribute('data-year');
+function checkAndAddModal(dataYear){
+    let modalItem;
+    const currentModal = document.querySelector('.modal');
     
     //Если элемента нет на странице, то выводим его
     if(!currentModal){
@@ -83,6 +87,15 @@ function checkAndAddModal(target){
     }
 }
 
+function addModalItem(modalItem, dataYear){
+    for(let i=0; i < arrModalItemsAll.length; i++){
+        if(dataYear === arrModalItemsAll[i].year){
+            modalItem = getModalItem(dataYear, i);
+        }
+    }
+    sityDiv.append(modalItem);
+}
+
 function getModalItem (year, index){
     //получаем значения для блока из массива
     const title = arrModalItemsAll[index].title;
@@ -93,6 +106,9 @@ function getModalItem (year, index){
     item.classList.add('modal');
     item.classList.add(`year-${year}`);
     item.classList.add('b-show'); //для плавного появления блока на экране
+
+    item.setAttribute('data-year', year);
+
     item.innerHTML =  `
     <div class="modal__wrapper">
         <button class="modal__close-btn" id="close">✖</button>
