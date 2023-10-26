@@ -44,7 +44,6 @@ itemAll.forEach((item)=>{
         if(target.id === 'open' || target.id === 'open-img'){
             let modalItem;
             let dataYear;
-            let indexArrModalItems;
             const currentModal = document.querySelector('.modal');
 
             //Получаем дата атрибут года
@@ -57,21 +56,31 @@ itemAll.forEach((item)=>{
 
             //Если элемента нет на странице, то выводим его
             if(!currentModal){
-                for(let i=0; i < arrModalItemsAll.length; i++){
-                    if(dataYear === arrModalItemsAll[i].year){
-                        modalItem = getModalItem(dataYear, i);
-                    }
-                }
-                sityDiv.append(modalItem);
+                addModalItem(modalItem, dataYear);
             }
             //если элемент есть, то удаляем его
             else{
-                currentModal.remove();
+                if(currentModal.classList.contains(`year-${dataYear}`)){
+                    currentModal.remove();
+                }
+                else{
+                    currentModal.remove();
+                    addModalItem(modalItem, dataYear);
+                }
             }
         }
         
     });
 });
+
+function addModalItem(modalItem, dataYear){
+    for(let i=0; i < arrModalItemsAll.length; i++){
+        if(dataYear === arrModalItemsAll[i].year){
+            modalItem = getModalItem(dataYear, i);
+        }
+    }
+    sityDiv.append(modalItem);
+}
 
 function getModalItem (year, index){
     const title = arrModalItemsAll[index].title;
@@ -86,7 +95,7 @@ function getModalItem (year, index){
         <div class="modal__title">${title}</div>
         <div class="modal__text">${text}</div>
         <button class="modal__btn ${year === '2019' ? 'dp-n' : ''}" id="prev-year">←</button>
-        <button class="modal__btn" id="next-year">→</button>
+        <button class="modal__btn ${year === '2024' ? 'dp-n' : ''}" id="next-year">→</button>
     </div>
     `
     return item
