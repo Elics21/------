@@ -568,7 +568,7 @@ body {
 
 .b-show {
   display: block;
-  animation: showBlock 0.5s linear forwards;
+  animation: showBlock 0.2s linear forwards;
 }
 
 @keyframes showBlock {
@@ -581,6 +581,7 @@ body {
 }
 .road-map {
   padding: 100px;
+  background: url("../img/bg/фон_карты.png") 0 0/cover no-repeat;
 }
 .road-map__sity {
   position: relative;
