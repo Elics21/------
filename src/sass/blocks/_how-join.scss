@@ -1,5 +1,44 @@
 .how-join{
+    background: 
+    linear-gradient(92deg, rgba(0, 178, 146, 0) 1.61%, rgba(0, 122, 100, 0.6) 28.98%, #69ECEC 50.22%, rgba(9, 19, 23, 0) 95.85%) 0 690px/100% 4px no-repeat;
+    height: 700px;
     &__wrapper{
         display: flex;
     }
+    &__content{
+        margin-top: 180px;
+    }
+    &__title{
+        color: #FFF;
+        font-family: Strong;
+        font-size: 50px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        margin-bottom: 45px;
+    }
+    &__button-wrapper{
+        display: flex;
+        margin-bottom: 30px;
+        &:last-child{
+            margin-bottom: 0;
+        }
+        align-items: center;
+    }
+    &__button-img{
+        width: 47px;
+        height: 47px;
+    }
+    &__button{
+        background-image: linear-gradient(91deg, rgba(5, 218, 201, 0.41) -3.66%, rgba(0, 143, 163, 0.20) 49.48%, rgba(0, 174, 164, 0.38) 100.28%);
+        background-color: rgba(2, 130, 133, 0.25);
+        border: 2px solid #00D6DA;
+        width: 260px;
+        border-radius: 20px 8px;
+        height: 56px;
+        color: white;
+        font-size: 16px;
+        margin-left: 25px;
+    }
+    
 }
