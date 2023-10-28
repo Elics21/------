@@ -631,3 +631,7 @@ body {
 .road-map__open img {
   margin-top: 2px;
 }
+
+.how-join__wrapper {
+  display: flex;
+}

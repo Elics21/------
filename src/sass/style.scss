@@ -15,6 +15,7 @@ body{
     border-left: 3px solid #FFFFFF;
     margin-right: 17px;
 }
+
 //Base
 @import 'base/base';
 @import "base/buttons";
@@ -30,3 +31,4 @@ body{
 @import 'blocks/plan';
 @import 'blocks/modal';
 @import 'blocks/road-map';
+@import 'blocks/how-join';

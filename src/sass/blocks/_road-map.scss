@@ -3,7 +3,6 @@
     background: url('../img/bg/фон_карты.png') 0 0/cover no-repeat;
     &__sity{
         position: relative;
-        //box-shadow: 0px 0px 0px 2px rgb(82, 255, 245);
         margin-bottom: 25px;
     }
     &__years-wrapper{
@@ -11,7 +10,6 @@
         justify-content: space-between;
     }
     &__item{
-        //border: 1px solid #FFF;
         width: 15%;
         text-align: center;
         
