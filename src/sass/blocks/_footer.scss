@@ -1,0 +1,26 @@
+.footer{
+    height: 100px;
+    padding: 25px 0;
+    &__copipast{
+        color: rgba(45, 255, 217, 0.26);
+        text-align: center;
+        font-family: Strong;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        text-transform: capitalize;
+        margin-bottom: 16px;
+    }
+    &__socials{
+        display: flex;
+        justify-content: center;    
+    }
+    &__social{
+        display: block;
+        margin-right: 15px;
+        &:last-child{
+            margin-right: 0;
+        }
+    }
+}
