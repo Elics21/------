@@ -19,11 +19,13 @@
         line-height: 30px; /* 115.385% */
     }
     &__wrapper{
-        position: relative;
     }
-    &__img{
-        position: absolute;
+    &__content-wrapper{
+        display: flex;
+    }
+    &__img{ 
         top: -30px;
-        left: 470px;
+        left: 0px;
+        width: 50%;
     }
 }

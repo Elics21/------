@@ -2,13 +2,13 @@
     height: 1034px;
     background:url('../img/bg/фон.jpg') 0 0/cover no-repeat;
     &__wrapper{
-        position: relative;
     }
     &__robot-img{
-        position: absolute;
-        top: 350px;
-        right: -140px;
-        width: 800px;
+        width: 50%;
+    }
+    &__content-wrapper{
+        display: flex;
+        justify-content: space-between;
     }
     &__title{
         font-size: 40px;
