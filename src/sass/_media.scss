@@ -88,5 +88,34 @@
     }
 }
 @media (max-width: 576px){
-
+    .container{
+        width: 300px;
+    }
+    .main{
+        height: 834px;
+        &__title{
+            font-size: 20px;
+        }
+        &__big-text{
+            font-size: 50px;
+        }
+        &__robot-img{
+            display: none;
+        }
+        &__description{
+            width: 300px;
+            margin-bottom: 40px;
+        }
+        &__content-wrapper{
+            display: flex;
+        }
+    }
+    .button{
+        a{
+            font-size: 14px;
+        }
+    }
+    .join{
+        width: 158px;
+    }
 }
