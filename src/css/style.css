@@ -703,12 +703,23 @@ body {
 
 @media (max-width: 1300px) {
   .container {
-    width: 992px;
+    width: 1070px;
+  }
+}
+@media (max-width: 1170px) {
+  .container {
+    width: 890px;
   }
   .main__title {
-    font-size: 35px;
+    font-size: 30px;
   }
   .main__big-text {
-    font-size: 70px;
+    font-size: 65px;
+  }
+  .main__robot-img {
+    width: 45%;
+  }
+  .main__description {
+    font-size: 18px;
   }
 }
