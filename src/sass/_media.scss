@@ -51,6 +51,9 @@
 }
 
 @media (max-width: 767px) {
+    .container{
+        width: 476px;
+    }
     .hamburger-menu{
         display: block;
     }
@@ -62,7 +65,7 @@
             top: 0px;
             right: 0;
             width: 50%;
-            height: 110vw;
+            height: 100vh;
             background-color: #333;
             text-align: center;
             padding: 50px 10px;
@@ -83,9 +86,6 @@
             }
         }
     }
-}
-
-@media (max-width: 768px){
 }
 @media (max-width: 576px){
 
