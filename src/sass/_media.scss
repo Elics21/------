@@ -34,6 +34,21 @@
             height: 50%;
         }
     }
+    .nobody{
+        background: none;
+        padding: 0;
+        .cover-2{
+            display: block;
+            background: none;
+            width: 50%;
+        }
+        &__date{
+            font-size: 27px;
+            text-decoration:underline;
+            font-weight: 500;
+            text-align: center;
+        }
+    }
 }
 @media (max-width: 992px){
     .container{
@@ -74,6 +89,11 @@
     }
     .fs26{
         font-size: 24px;
+    }
+    .nobody{
+        .cover-2{
+            width: 70%;
+        }
     }
 }
 
@@ -125,6 +145,7 @@
         }
     }
     .why-ai{
+        height: 550px;
         &__img{
             display: none;
         }
@@ -133,6 +154,11 @@
         margin-top: 50px;
         display: block;
         width: 480px;
+    }
+    .nobody{
+        .cover-2{
+            width: 90%;
+        }
     }
 }
 @media (max-width: 576px){
@@ -172,6 +198,9 @@
         width: 200px;
     }
     .why-ai{
+        display: none;
+    }
+    .nobody{
         display: none;
     }
 
