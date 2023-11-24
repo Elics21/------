@@ -21,6 +21,19 @@
             font-size: 18px;
         }
     }
+    .cover-1{
+        display: block;
+        width: 700px;
+        height: 0;
+        background: none;
+    }
+    .why-ai{
+        &__img{
+            margin-top: 50px;
+            width: 50%;
+            height: 50%;
+        }
+    }
 }
 @media (max-width: 992px){
     .container{
@@ -47,6 +60,20 @@
         &__menu-item{
             font-size: 20px;
         }
+    }
+    .why-ai{
+        &__img{
+            margin-top: 100px;
+        }
+        &__title{
+            font-size: 45px;
+        }
+        &__text{
+            font-size: 18px;
+        }
+    }
+    .fs26{
+        font-size: 24px;
     }
 }
 
@@ -97,6 +124,16 @@
             font-size: 17px;
         }
     }
+    .why-ai{
+        &__img{
+            display: none;
+        }
+    }
+    .cover-1{
+        margin-top: 50px;
+        display: block;
+        width: 480px;
+    }
 }
 @media (max-width: 576px){
     .container{
@@ -128,6 +165,14 @@
     }
     .join{
         width: 158px;
+    }
+    .cover-1{
+        margin-top: 50px;
+        display: block;
+        width: 200px;
+    }
+    .why-ai{
+        display: none;
     }
 
 }
