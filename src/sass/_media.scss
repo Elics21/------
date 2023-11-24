@@ -86,6 +86,17 @@
             }
         }
     }
+    .about-technology{
+        background: #0B1D24;
+        height: 670px;
+        padding:  75px 0;
+        &__title{
+            font-size: 55px;
+        }
+        &__text{
+            font-size: 17px;
+        }
+    }
 }
 @media (max-width: 576px){
     .container{
@@ -118,4 +129,5 @@
     .join{
         width: 158px;
     }
+
 }

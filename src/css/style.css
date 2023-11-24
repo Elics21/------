@@ -805,6 +805,17 @@ body {
   .header__menu-close.active {
     display: block;
   }
+  .about-technology {
+    background: #0B1D24;
+    height: 670px;
+    padding: 75px 0;
+  }
+  .about-technology__title {
+    font-size: 55px;
+  }
+  .about-technology__text {
+    font-size: 17px;
+  }
 }
 @media (max-width: 576px) {
   .container {
