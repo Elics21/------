@@ -95,6 +95,16 @@
             width: 70%;
         }
     }
+    .results{
+        &__robot{
+            display: none;
+        }
+        &__graph{
+            img{
+                width: 90%;
+            }
+        }
+    }
 }
 
 @media (max-width: 767px) {
@@ -160,6 +170,7 @@
             width: 90%;
         }
     }
+
 }
 @media (max-width: 576px){
     .container{
@@ -203,5 +214,16 @@
     .nobody{
         display: none;
     }
-
+    .results{
+        min-height: 980px;
+        margin-top: 300px;
+        &__robot{
+            display: none;
+        }
+        &__graph{
+            img{
+                width: 90%;
+            }
+        }
+    }
 }
