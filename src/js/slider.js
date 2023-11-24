@@ -35,4 +35,3 @@ buttonNext.addEventListener('click', () => {
 buttonPrev.addEventListener('click', () => {
     sliderNextOrPrevSlide('prev');
 });
-
